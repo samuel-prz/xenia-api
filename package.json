@@ -5,7 +5,11 @@
   "scripts": {
     "dev": "nodemon --exec tsx src/server.ts",
     "build": "tsc -p tsconfig.json",
-    "start": "node dist/server.js"
+    "start": "node dist/server.js",
+    "drizzle:push": "drizzle-kit push",
+    "drizzle:studio": "drizzle-kit studio",
+    "drizzle:generate": "drizzle-kit generate",
+    "seed": "tsx src/db/seed.ts"
   },
   "keywords": [],
   "author": "",
@@ -16,6 +20,7 @@
     "@fastify/cookie": "^11.0.2",
     "@fastify/cors": "^11.1.0",
     "argon2": "^0.43.1",
+    "chalk": "^5.5.0",
     "dotenv": "^17.2.1",
     "drizzle-kit": "^0.31.4",
     "drizzle-orm": "^0.44.4",
@@ -25,7 +30,9 @@
     "zod": "^4.0.16"
   },
   "devDependencies": {
+    "@types/chalk": "^0.4.31",
     "@types/node": "^24.2.1",
+    "@types/pg": "^8.15.5",
     "nodemon": "^3.1.10",
     "tsx": "^4.20.3",
     "typescript": "^5.9.2"

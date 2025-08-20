@@ -1,2 +1,36 @@
+# Node
 node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Build
+dist/
+build/
+
+# Env
 .env
+.env.*
+!.env.example
+
+# Logs
+logs/
+*.log
+*.tmp
+*.temp
+
+# DB & Drizzle
+drizzle/*.sqlite
+drizzle/migrations-lock.json
+
+# OS / Editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# Coverage / Testing
+coverage/
+.jest/

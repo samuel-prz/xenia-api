@@ -1,3 +1,5 @@
+// env.ts - This file loads environment variables and provides a configuration object for the server
+
 import 'dotenv/config';
 
 function must(name: string): string {
